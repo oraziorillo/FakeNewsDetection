@@ -6,7 +6,7 @@
 
 Linguistic Harbinger of Fake News
 
-#### **2. Abstract: ** 
+#### 2. Abstract:
 
 The original paper revealed the subtle signs of imminent betrayal encoded in the conversational patterns of a dyad of players in the game Diplomacy. 
 
