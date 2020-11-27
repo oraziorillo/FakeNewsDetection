@@ -17,7 +17,7 @@ Starting from a dataset of plain text labeled news, our goal is thus to compute 
 #### **3. Research questions ** 
 
 - Is there any linguistic cue that clearly identifies a fake news?
-- Are the linguistic features mentioned in the paper suitable for an extension of the analysis to a domain different from that of a communication between players in board game? 
+- Are the linguistic features mentioned in the paper suitable for an extension of the analysis to a domain different from that of communication between players in board game? 
 - If not entirely, which could the other indicators be?
 
 #### **4. Proposed datasets**
