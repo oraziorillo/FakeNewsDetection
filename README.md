@@ -102,8 +102,8 @@ Orazio:
 - will build another model (undecided yet) and train it on the dataset;
 - will create any interactive or static plot needed in the data story.
 
-Together, they will:
+Tristan:
 
-- compare the results and choose the best model;
-- put the textual and visual data story together on a web page;
-- prepare a video presentation.
+- will compare the results and choose the best model;
+- will put the textual and visual data story together on a web page;
+- will prepare a video presentation.
