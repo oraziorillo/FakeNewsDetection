@@ -10,14 +10,14 @@ Linguistic Harbinger of Fake News
 
 The original paper revealed the subtle signs of imminent betrayal encoded in the conversational patterns of a dyad of players in the game Diplomacy. 
 
-Our intention is to explore whether the linguistic cues that have been found in the original paper are suitable for a descriptive/predictive analysis in a related but still different context. The theme we want to discuss is "fake news". Since the advent of social networks, fake news has become a major issue. Traditionally, information has always been filtered and verified before publication. These new media give accessibility to information spreading to anyone that has an Internet connection. 
+Our intention is to explore whether the linguistic cues that have been found in the original paper are suitable for a descriptive/predictive analysis in a different but still related context. The theme we want to discuss is "fake news". Since the advent of social networks, fake news has become a major issue. Traditionally, information has always been filtered and verified before publication. These new media give accessibility to information spreading to anyone that has an Internet connection. 
 
 Starting from a dataset of plain text labeled news, our goal is thus to compute some of the linguistic features individuated in the original paper (such as argumentation, talkativeness, etc.) and to discover further indicators if needed, then build a machine learning model that will possibly distinguish between fake and real news.
 
 #### **3. Research questions ** 
 
 - Is there any linguistic cue that clearly identifies a fake news?
-- Are the linguistic features mentioned in the paper suitable for an extension of the analysis to a different domain from board game communication? 
+- Are the linguistic features mentioned in the paper suitable for an extension of the analysis to a domain different from that of a communication between players in board game? 
 - If not entirely, which could the other indicators be?
 
 #### **4. Proposed datasets**
@@ -39,7 +39,7 @@ This dataset has been downloaded from Kaggle. It consists of 4009 distinct real 
    1. Extract the politeness level from the article with [Stanford Politeness classifier](https://github.com/sudhof/politeness/tree/python3)
 
       * Extract the articles from the dataset and prepare them in txt form
-      * Pipeline the text documents to Standford CoreNLP and collect their dependency parses
+      * Pipeline the text documents to Standford CoreNLP and collect their dependency parsings
       * Prepare a list of dictionaries with articles and parses as keys and their content as values
       * Send the dictionary to the classifier and obtain the politeness score
 
@@ -52,12 +52,12 @@ This dataset has been downloaded from Kaggle. It consists of 4009 distinct real 
       * Prepare Stanford parse trees from the articles
       * Extract the discourse markers from the parse trees using [this](https://github.com/erzaliator/DiscourseMarker) discourse marker highlighter
 
-   5. Count the number of *planning markers* from the articles
+   5. Count the number of *planning markers* in the articles
 
       (Alternative 1)
 
       * Design a rough future temporal marker lexicon
-      * Count the number of occurrences of the markers from the document
+      * Count the number of occurrences of the markers in the document
 
       (Alternative 2)
 
