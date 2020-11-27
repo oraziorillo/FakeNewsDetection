@@ -2,7 +2,7 @@
 
 
 
-#### **1. Title**
+#### 1. Title
 
 Linguistic Harbinger of Fake News
 
@@ -14,19 +14,19 @@ Our intention is to explore whether the linguistic cues that have been found in 
 
 Starting from a dataset of plain text labeled news, our goal is thus to compute some of the linguistic features individuated in the original paper (such as argumentation, talkativeness, etc.) and to discover further indicators if needed, then build a machine learning model that will possibly distinguish between fake and real news.
 
-#### **3. Research questions ** 
+#### 3. Research questions 
 
 - Is there any linguistic cue that clearly identifies a fake news?
 - Are the linguistic features mentioned in the paper suitable for an extension of the analysis to a domain different from that of communication between players in board game? 
 - If not entirely, which could the other indicators be?
 
-#### **4. Proposed datasets**
+#### 4. Proposed datasets
 
 [Fake News detection](https://www.kaggle.com/jruvika/fake-news-detection)
 
 This dataset has been downloaded from Kaggle. It consists of 4009 distinct real and fake labeled news. Each news has four attributes: *URLs*, *Headline*, *Body* and *Label*. Although, note that we do not plan to use the *URLs* feature, since we want to base our analysis on pure linguistic cues. It would be an easy task to classify such news based on the URL of the website that published it, since some websites are a priori trustworthy and others are not.    
 
-#### **5. Methods** 
+#### 5. Methods 
 
 ##### Data collection and preprocessing:
 
