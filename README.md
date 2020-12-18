@@ -32,16 +32,16 @@ This dataset has been downloaded from Kaggle. It consists of 4009 distinct real 
 
 1. Load the dataset
 
-2. Append the body column to the headline column, to form a complete article
+~~2. Append the body column to the headline column, to form a complete article.~~
 
 3. Extract features from the combined articles
 
-   1. Extract the politeness level from the article with [Stanford Politeness classifier](https://github.com/sudhof/politeness/tree/python3)
+   ~~1. Extract the politeness level from the article with [Stanford Politeness classifier](https://github.com/sudhof/politeness/tree/python3)~~
 
-      * Extract the articles from the dataset and prepare them in txt form
-      * Pipeline the text documents to Standford CoreNLP and collect their dependency parsings
-      * Prepare a list of dictionaries with articles and parses as keys and their content as values
-      * Send the dictionary to the classifier and obtain the politeness score
+      ~~* Extract the articles from the dataset and prepare them in txt form
+      ~~* Pipeline the text documents to Standford CoreNLP and collect their dependency parsings
+      ~~* Prepare a list of dictionaries with articles and parses as keys and their content as values
+      ~~* Send the dictionary to the classifier and obtain the politeness score
 
    2. Extract the *subjectivity* using [TextBlob Sentiment Analizer](https://planspace.org/20150607-textblob_sentiment/)
 
@@ -61,7 +61,8 @@ This dataset has been downloaded from Kaggle. It consists of 4009 distinct real 
 
       (Alternative 2)
 
-      * Perform P.O.S. Tagging with [Penn Treebank](https://www.google.com/search?q=penn+treebank&oq=penn+treebank&aqs=chrome..69i57j0j0i20i263j0l5.5027j0j4&sourceid=chrome&ie=UTF-8)
+      ~~* Perform P.O.S. Tagging with [Penn Treebank](https://www.google.com/search?q=penn+treebank&oq=penn+treebank&aqs=chrome..69i57j0j0i20i263j0l5.5027j0j4&sourceid=chrome&ie=UTF-8)~~
+      * Perform P.O.S. Tagging with [Penn Treebank](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
       * Parse the resulting tree and count the number of verbs in future tense
 
    6. Count the number of claim and premise markers with [this](https://academic.csuohio.edu/polen/LC9_Help/1/11pcindicators.htm) lexicon
@@ -107,3 +108,67 @@ Tristan:
 - will compare the results and choose the best model;
 - will put the textual and visual data story together on a web page;
 - will prepare a video presentation.
+
+
+
+
+# Update
+
+### Repository Structure
+
+Our repository has the following structure:
+```bash
+├── README.md
+|
+├── data
+│   ├── data.csv
+│   ├── data_bertsent.csv
+│   ├── discourseMarkers.data
+│   └── reviews.csv
+|
+├── coreNLPServer.py
+├── discourseMarkers.py
+├── paper_extension.ipynb
+├── resources.py
+└── sentiment_bert.py
+└── report.pdf
+```
+
+* data/data.csv contains the original dataset.
+* data/data_bertsent contains the sentiment score from our SentimentBERT classifier.
+* data/discourseMarkers.data contains lists of discourse markers for each articles.
+* data/reviews.csv contains the dataset that SentimentBERT is trained on.
+
+* coreNLPServer.py is the script to run the Standford CoreNLP server. You need to [download the server](https://stanfordnlp.github.io/CoreNLP/download.html) befor running it
+* discourseMarkers.py is used to create discourseMarkers.data file.
+* resources.py contains the required NLTK tools and instances of external classes, for example, list of premise markers.
+* sentiment_bert.py contains the SentimentBert class and training scripts for our SentimentBERT classifier.
+* **paper_extension.ipynb** contains the results of our reproduction. It should be used as the main file for evaluation.
+* **report.pdf** is the summary of our project.
+
+###  Methods
+
+* Article headlines was discarded from our model.
+* The original step 3.1 was replaced with sentiment score extration wih BERT and NLTK.
+* The link of Penn Treebank was updated.
+
+
+### Contributions of Group Members
+
+Tianzong:
+
+- Feature extration 3.1 - 3.3;
+- Logistic regression & SVM modelling;
+- Result visulization and discussion;
+- Writing report;
+
+Orazio:
+
+- Feature extration 3.4 - 3.6;
+- Feature extraction 3.7 by adding *dictionary percentage* feature;
+- Explorotory data analysis on extracted features and visulizations;
+- Writing report;
+- Will prepare a video presentation.
+
+
+
