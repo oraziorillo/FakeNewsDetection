@@ -5,11 +5,12 @@ from nltk.stem import WordNetLemmatizer
 from nltk.parse.corenlp import CoreNLPParser
 
 # Download required NLTK corpora (if not already present)
-download('punkt')
 download('averaged_perceptron_tagger')
-download("words")
+download('vader_lexicon')
 download("stopwords")
 download("wordnet")
+download("words")
+download('punkt')
 
 # Load the WordNet lemmatizer
 lemmatizer = WordNetLemmatizer()
