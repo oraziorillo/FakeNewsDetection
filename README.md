@@ -4,7 +4,9 @@
 
 #### 1. Title
 
-Linguistic Harbinger of Fake News
+~~Linguistic Harbinger of Fake News~~
+
+Linguistic Cues Unveiling Fake News
 
 #### 2. Abstract:
 
@@ -148,6 +150,7 @@ Our repository has the following structure:
 
 ###  Methods
 
+* The project title was changed.
 * Article headlines was discarded from our model.
 * The original step 3.1 was replaced with sentiment score extration wih BERT and NLTK.
 * The link of Penn Treebank was updated.
