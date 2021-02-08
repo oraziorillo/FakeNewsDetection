@@ -1,10 +1,10 @@
 # Applied Data Analysis extension project
 
-#### Title
+## Title
 
 Linguistic Cues Unveiling Fake News
 
-#### Abstract:
+## Abstract:
 
 The original paper revealed the subtle signs of imminent betrayal encoded in the conversational patterns of a dyad of players in the game Diplomacy. 
 
@@ -12,25 +12,25 @@ Our intention is to explore whether the linguistic cues that have been found in 
 
 Starting from a dataset of plain text labeled news, our goal is thus to compute some of the linguistic features individuated in the original paper (such as argumentation, talkativeness, etc.) and to discover further indicators if needed, then build a machine learning model that will possibly distinguish between fake and real news.
 
-#### Research questions 
+## Research questions 
 
 - Is there any linguistic cue that clearly identifies a fake news?
 - Are the linguistic features mentioned in the paper suitable for an extension of the analysis to a domain different from that of communication between players in board game? 
 - If not entirely, which could the other indicators be?
 
-#### Proposed datasets
+## Proposed datasets
 
 [Fake News detection](https://www.kaggle.com/jruvika/fake-news-detection)
 
 This dataset has been downloaded from Kaggle. It consists of 4009 distinct real and fake labeled news. Each news has four attributes: *URLs*, *Headline*, *Body* and *Label*. Although, note that we do not plan to use the *URLs* feature, since we want to base our analysis on pure linguistic cues. It would be an easy task to classify such news based on the URL of the website that published it, since some websites are a priori trustworthy and others are not.    
 
-#### Methods 
+## Methods 
 
-##### Data collection and preprocessing:
+#### Data collection and preprocessing:
 
 1. Load the dataset
 
-2. Extract features from the combined articles
+2. Extract features from the plain text articles
 
    a. Extract the sentiment score extration with both the tools BERT and NLTK
    
@@ -51,7 +51,7 @@ This dataset has been downloaded from Kaggle. It consists of 4009 distinct real 
    f. Count the number of claim and premise markers with [this](https://academic.csuohio.edu/polen/LC9_Help/1/11pcindicators.htm) lexicon
    g. Count the number of grammatical mistakes
 
-##### Model setup:
+#### Model setup:
 
  1. Test the original model used in the paper to perform binary classification on the extracted features and the authenticity of the news. The model used here is logistic regression with univariate feature selection and 5-fold cross-validation.
  2. Test SVD performances.
@@ -60,7 +60,7 @@ This dataset has been downloaded from Kaggle. It consists of 4009 distinct real 
 
 You can find a presentation of our results in report.pdf or directly give a look to the Jupyter notebook paper_extension.ipynb
 
-### Repository Structure
+## Repository Structure
 
 Our repository has the following structure:
 ```bash
