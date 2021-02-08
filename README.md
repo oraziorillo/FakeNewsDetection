@@ -1,6 +1,4 @@
-# ada-2020-project-milestone-p3-p3_thot
-
-
+# Applied Data Analysis extension project
 
 #### Title
 
