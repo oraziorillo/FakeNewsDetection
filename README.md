@@ -1,12 +1,8 @@
-# Applied Data Analysis extension project
+# Linguistic Cues Unveiling Fake News (ADA extension project)
 
-## Title
+## Abstract
 
-Linguistic Cues Unveiling Fake News
-
-## Abstract:
-
-The original paper revealed the subtle signs of imminent betrayal encoded in the conversational patterns of a dyad of players in the game Diplomacy. 
+Our starting point is the paper [Linguistic Harbingers of Betrayal: A Case Study on an Online Strategy Game](https://arxiv.org/abs/1506.04744). It revealed the subtle signs of imminent betrayal encoded in the conversational patterns of dyads of players in the game Diplomacy. 
 
 Our intention is to explore whether the linguistic cues that have been found in the original paper are suitable for a descriptive/predictive analysis in a different but still related context. The theme we want to discuss is "fake news". Since the advent of social networks, fake news has become a major issue. Traditionally, information has always been filtered and verified before publication. These new media give accessibility to information spreading to anyone that has an Internet connection. 
 
