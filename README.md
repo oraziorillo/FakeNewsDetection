@@ -1,5 +1,9 @@
 # Linguistic Cues Unveiling Fake News (ADA extension project)
 
+## Video presentation
+
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/i04Q7n0jPUQ/0.jpg)](http://www.youtube.com/watch?v=i04Q7n0jPUQ "Linguistic cues unveiling fake news (by ThOT)")
+
 ## Abstract
 
 Our starting point is the paper [Linguistic Harbingers of Betrayal: A Case Study on an Online Strategy Game](https://arxiv.org/abs/1506.04744). It revealed the subtle signs of imminent betrayal encoded in the conversational patterns of dyads of players in the game Diplomacy. 
@@ -85,5 +89,5 @@ Our repository has the following structure:
 * discourseMarkers.py is used to create discourseMarkers.data file.
 * resources.py contains the required NLTK tools and instances of external classes, for example, list of premise markers.
 * sentiment_bert.py contains the SentimentBert class and training scripts for our SentimentBERT classifier.
-* **paper_extension.ipynb** contains the results of our reproduction. It should be used as the main file for evaluation.
-* **report.pdf** is the summary of our project.
+* **paper_extension.ipynb** contains the results of our reproduction.
+* **report.pdf** is the report of our project.
