@@ -1,4 +1,4 @@
-# Linguistic Cues Unveiling Fake News (ADA extension project)
+# Linguistic Features Unveiling Fake News (ADA extension project)
 
 ## Video presentation
 
