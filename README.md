@@ -4,13 +4,14 @@
 
 [![IMAGE ALT TEXT](http://img.youtube.com/vi/i04Q7n0jPUQ/0.jpg)](http://www.youtube.com/watch?v=i04Q7n0jPUQ "Linguistic cues unveiling fake news (by ThOT)")
 
-## Abstract
+## Introduction
 
 Our starting point is the paper [Linguistic Harbingers of Betrayal: A Case Study on an Online Strategy Game](https://arxiv.org/abs/1506.04744). It revealed the subtle signs of imminent betrayal encoded in the conversational patterns of dyads of players in the game Diplomacy. 
 
-Our intention is to explore whether the linguistic cues that have been found in the previously mentioned paper are suitable for a descriptive/predictive analysis in a different but still related context. The theme we want to discuss is "fake news". Since the advent of social networks, that of fake news has become a major issue. Traditionally, information has always been filtered and verified before publication. These new media give accessibility to information spreading to anyone that has an Internet connection. 
+Our intention is to explore whether the linguistic cues that have been found in the previously mentioned paper are suitable for a descriptive/predictive analysis in a different but still related context. The theme we want to discuss is "fake news". Since the advent of social networks, that of fake news has become a major issue. Traditionally, information has always been filtered and verified before publication. New media allow whoever is in possess of a device with an Internet connection to spread information at their own will, regardless of its truthfulness.
 
-Starting from a dataset of plain text labeled news, our goal is thus to compute some of the linguistic features individuated in the original paper (such as argumentation, talkativeness, etc.) and to discover further indicators if needed, then build a machine learning model that will possibly distinguish between fake and real news.
+Starting from a dataset of plain text labeled news, our goal is thus to compute some of the linguistic features individuated in the original paper (such as argumentation, talkativeness, etc.) and to discover other signifcant ones, then build a machine learning model to distinguish fake news from real news.
+
 
 ## Research questions 
 
